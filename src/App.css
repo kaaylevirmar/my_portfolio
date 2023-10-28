@@ -2,13 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
+.content{
+  width: 50%;
+}
 
+
+
+
+/*Navbar */
 .custom-underline {
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  transition: border-color 0.2s;
+  
+  animation: border-color 0.2s;
 }
 
 .custom-underline:hover {
-  border-color: blue;
+  border-color: white;
 }
+
+.navbar {
+  background-color: #030236;
+  color: white;
+  
+}
+
+
+
+.body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #030236;
+  color: white;
+}
+
+.greeting {
+  color: #e6c627;
+}
+.dropdown {
+  width: 100%;
+  background-color: #030236;
+}
+
+/* Type animation*/
+.type {
+  font-weight: bold;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  color: white;
+}
+
+.intro {
+  color: white;
+  
+  
+}
+
+
+
+
+.cv_btn{
+
+  border-color: #e6c627;
+  border: 2px solid #e6c627;
+  color: #e6c627;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cv_btn:hover{
+  background-color: #e6c627;
+  color: #fff;
+  
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.line {
+  width: 200px;
+  height: 2px;
+  background-color: #fff;
+
+  animation: lineAnimation 2s;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+
+
+
+
+
